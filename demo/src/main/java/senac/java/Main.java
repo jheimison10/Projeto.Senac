@@ -81,6 +81,7 @@ public class Main {
         System.out.print("Bolsa: "); double bolsa = sc.nextDouble(); sc.nextLine();
         System.out.print("Ativo (true/false): "); boolean ativo = sc.nextBoolean(); sc.nextLine();
         System.out.print("Nova imprementação");
+        System.out.print("Testando merge");
 
         return new Estagiario(nome, idade, cpf, passos, email, telefone, endereco, data, altura, corOlho, cargo, matricula, salario, setor, horas, bolsa, ativo);
     }
