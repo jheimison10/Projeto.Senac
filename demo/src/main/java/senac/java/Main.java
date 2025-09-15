@@ -6,35 +6,57 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Criando um funcionário fixo
-        Funcionario funcionario1 = new Funcionario(
-            "Jheimison", 35, "005.508.962-36", 0,
-            "jheimison_gomes@hotmail.com", "(95)99146-5819",
-            "Bairro: Silvio Leite, 166", "25/11/1989",
-            1.75, "Castanho", "Gerente", "12345", 5500.0, "TI"
+        // Criando um Funcionário fixo
+        Funcionario Funcionario1 = new Funcionario(
+            "Jheimison", 
+            35, 
+            "005.508.962-36", 
+            0,
+            "jheimison_gomes@hotmail.com", 
+            "(95)99146-5819",
+            "Bairro: Silvio Leite, 166", 
+            "25/11/1989",
+            1.75, 
+            "Castanho", 
+            "Gerente", 
+            "12345", 
+            5500.0, 
+            "TI"
         );
 
-        // Criando um estagiário fixo
-        Estagiario estagiario1 = new Estagiario(
-            "Maria Eduarda", 22, "456.789.123-45", 0,
-            "maria.eduarda@email.com", "(11)98765-4321",
-            "Rua das Flores, 789", "10/05/2003",
-            1.68, "Verde", "Estagiária de Marketing", "67890", 1800.0,
-            "Marketing", 30, 800.0, true
+        // Criando um Estagiário fixo
+        Estagiario Estagiario1 = new Estagiario(
+            "Maria Eduarda", 
+            22, 
+            "456.789.123-45", 
+            0,
+            "maria.eduarda@email.com", 
+            "(11)98765-4321",
+            "Rua das Flores, 789", 
+            "10/05/2003",
+            1.68, 
+            "Verde", 
+            "Estagiária de Marketing", 
+            "67890", 
+            1800.0,
+            "Marketing", 
+            30, 
+            800.0, 
+            true
         );
 
         System.out.println("--- Funcionário ---");
-        System.out.println(funcionario1);
+        System.out.println(Funcionario1);
 
         System.out.println("\n--- Estagiário ---");
-        System.out.println(estagiario1);
+        System.out.println(Estagiario1);
 
-        // Cadastro de novo funcionário via Scanner
+        // Cadastro de novo Funcionário via Scanner
         System.out.println("\n--- Cadastro de novo Funcionário ---");
         Funcionario funcionarioNovo = cadastrarFuncionario(scanner);
         System.out.println(funcionarioNovo);
 
-        // Cadastro de novo estagiário via Scanner
+        // Cadastro de novo Estagiário via Scanner
         System.out.println("\n--- Cadastro de novo Estagiário ---");
         Estagiario estagiarioNovo = cadastrarEstagiario(scanner);
         System.out.println(estagiarioNovo);
@@ -59,7 +81,20 @@ public class Main {
         System.out.print("Salário: "); double salario = sc.nextDouble(); sc.nextLine();
         System.out.print("Setor: "); String setor = sc.nextLine();
 
-        return new Funcionario(nome, idade, cpf, passos, email, telefone, endereco, data, altura, corOlho, cargo, matricula, salario, setor);
+        return new Funcionario(nome, 
+        idade, 
+        cpf, 
+        passos, 
+        email, 
+        telefone, 
+        endereco, 
+        data, 
+        altura, 
+        corOlho, 
+        cargo, 
+        matricula, 
+        salario, 
+        setor);
     }
 
     public static Estagiario cadastrarEstagiario(Scanner sc) {
